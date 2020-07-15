@@ -13,10 +13,33 @@
 
 <script>
 
-    document.write("Paula nasceu em " + (2020 - 39) + "<br>");
-    document.write( "João nasceu em " +(2020 - 45) + "<br>");
-    document.write("Fábio nasceu em " + (2020 - 60)+ "<br>");
-    document.write("18 + 2" + "<br>");
-    document.write("18" + "2");
+var ano = 2020;
+
+    document.write("Paula tem " + (ano - 1981) + " anos" + "<br>");
+    document.write("João tem " + (ano - 1953) +  " anos" + "<br>");
+    
+    ano = 2021
+    document.write("Fábio tem " + (ano - 1975) + " anos" + "<br>");
+
+
+    var idadePaula = 39
+    var idadeJoao = 67
+    var idadeFabio = 46
+
+    var media = (idadePaula + idadeJoao + idadeFabio) /3;
+
+    /*var media = (39 + 67 + 46)/3;*/
+
+    document.write( ' A média das idades é ' + Math.round(media));
+    document.write("<br>")
+
+    var nome = "Paula";
+    document.write( "A idade de " + nome + " é " + idadePaula);
+
+
+    
+
+    /*document.write("18 + 2" + "<br>");
+    document.write("18" + "2"); */
 
 </script>
