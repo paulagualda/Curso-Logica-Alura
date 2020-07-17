@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    var idadeMediaQuandoTemFilhos = 28
+    var anoAtual = 2020
+    var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+    mostra("Desde 1500 até o ano atual, quantas gereções se passaram?");
+    mostra("Se passaram " + Math.round(quantidadeDeGeracoes) + " gerações.");
+
+</script>
+</html>

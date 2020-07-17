@@ -13,22 +13,44 @@
 
 <script>
 
-var ano = 2020;
+    function pulaLinha() {
 
-    document.write("Paula tem " + (ano - 1981) + " anos" + "<br>");
-    document.write("João tem " + (ano - 1953) +  " anos" + "<br>");
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+        
+        
+    }
+
+    var ano = 2020;
+    /*var puloLinha = "<br><br><br>" */
+
     
-    ano = 2021
-    document.write("Fábio tem " + (ano - 1975) + " anos" + "<br>");
+    mostra("Paula tem " + (ano - 1981) + " anos")
+    //pulaLinha();
+   
+    mostra("João tem " + (ano - 1953) +  " anos")
+    //pulaLinha();
+    
+    ano = 2021;
+  
+    mostra("Fábio tem " + (ano - 1975) + " anos")
+    //pulaLinha();
+    mostra("Olá pessoal");
 
 
+/*
     var idadePaula = 39
     var idadeJoao = 67
     var idadeFabio = 46
 
     var media = (idadePaula + idadeJoao + idadeFabio) /3;
 
-    /*var media = (39 + 67 + 46)/3;*/
+    var media = (39 + 67 + 46)/3;
 
     document.write( ' A média das idades é ' + Math.round(media));
     document.write("<br>")
@@ -39,7 +61,9 @@ var ano = 2020;
 
     
 
-    /*document.write("18 + 2" + "<br>");
-    document.write("18" + "2"); */
+    document.write("18 + 2" + "<br>");
+    document.write("18" + "2"); 
+    */
+    
 
 </script>
