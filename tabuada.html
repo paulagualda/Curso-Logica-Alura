@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+function pulaLinha() {
+
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+}
+
+for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+    mostra(7 * multiplicador);
+
+// ao invés de usarmos a estrutura abaixo para repetir a multiplicação, usamos a esturura
+// do for, descrita a cima.
+
+/*var multiplicador = 1;
+while(multiplicador <= 10) {
+    mostra(7 * multiplicador);
+    multiplicador = multiplicador + 1*/
+}
+
+</script>
