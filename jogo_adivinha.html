@@ -22,16 +22,28 @@ pulaLinha();
 
 
 }
-var numeroPensado = Math.round(Math.random() * 100);
-var chute = parseInt(prompt("Digite seu chute"));
+var numeroPensado = Math.round(Math.random() * 10) ;
+var tentativas = 1;
 
-if( chute == numeroPensado) {
-    mostra("Você acertou!")
+while( tentativas <= 3) {
+    var chute = parseInt(prompt("Digite seu chute"));
 
-} else {  
-    mostra("Você errou, o número pensado foi " + numeroPensado)
+    if( chute == numeroPensado) {
 
+        mostra("Você ACERTOU, o número pensado era " + numeroPensado);
+    break;
+
+    } else {  
+        mostra("Você ERROU!"); 
+
+    }
+    tentativas++;
 }
+
+mostra("FIM");
+
+
+
 // ao invés de usarmos outro if como abaixo, usamos o else acima
 //if( chute != numeroPensado) {
     //mostra("Você errou, o número pensado foi " + numeroPensado)
